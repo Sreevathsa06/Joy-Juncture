@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joy Juncture</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/styles.css">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            backdropBlur: {
+              '4xl': '80px',
+              '5xl': '120px',
+            },
+            fontFamily: {
+              sans: ['Inter var', 'sans-serif'],
+            },
+            colors: {
+              'jj-yellow': '#FFC700',
+              'jj-orange': '#FF8A00',
+              'jj-red': '#E53935',
+              'jj-purple': '#8E24AA',
+              'jj-blue': '#1E88E5',
+              'jj-sky': '#38bdf8',
+              'jj-pink': '#f472b6',
+              'jj-gray': {
+                '50': '#f9fafb',
+                '100': '#f3f4f6',
+                '200': '#e5e7eb',
+                '300': '#d1d5db',
+                '400': '#9ca3af',
+                '500': '#6b7280',
+                '600': '#4b5563',
+                '700': '#374151',
+                '800': '#1f2937',
+                '900': '#111827',
+              },
+            },
+          },
+        },
+      }
+    </script>
+  </head>
+  <body class="h-full w-full bg-jj-gray-50 text-jj-gray-900">
+    <div id="root" class="h-full w-full"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
